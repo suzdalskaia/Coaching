@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lab2_problem_126
 {
@@ -27,7 +23,7 @@ namespace Lab2_problem_126
             int floors = numbersInput[2];
             int particularAppartment = numbersInput[3];
 
-            if((appartmentsInBuilding % entrance == 0) && (appartmentsInBuilding % floors == 0))
+            if((appartmentsInBuilding % entrance == 0) && (appartmentsInBuilding % floors == 0) && particularAppartment >= 1 && particularAppartment <= appartmentsInBuilding)
             {
                 int appartmentsPerEntrance = appartmentsInBuilding / entrance;
                 int currentEntrance = (int)Math.Ceiling((double)particularAppartment / (double)appartmentsPerEntrance);
