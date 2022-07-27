@@ -85,15 +85,14 @@ namespace Lab3_problem_007
 
             for (int i = 0; i < str.Length; i++)
             {
-                currentNumber[i] = RomanToDigit(str[i].ToString());               
+                currentNumber[i] = RomanToDigit(str[i].ToString());
             }
 
             return currentNumber;
         }
 
         static string[] Separate(string inputData)
-        {            
-            
+        {
             string[] separatedInput = inputData.Split(separator);
             return separatedInput;
         }
