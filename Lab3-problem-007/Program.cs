@@ -41,10 +41,8 @@ namespace Lab3_problem_007
                     return 1;
                 case "V":
                     return 5;
-                    break;
                 case "X":
                     return 10;
-                    break;
                 case "L":
                     return 50;
                 case "C":
