@@ -35,7 +35,21 @@ namespace Lab3_problem_007
 
         static int RomanToDigit(string value)
         {
-            switch (value)
+            return value switch
+            {
+                "I" => 1,
+                "V" => 5,
+                "X" => 10,
+                "L" => 50,
+                "C" => 100,
+                "D" => 500,
+                "M" = > 1000,
+                _ => throw new ArgumentException("incorrect roman letter")
+            };
+            //return 1;
+            
+            
+            /*switch (value)
             {
                 case "I":
                     return 1;
@@ -53,7 +67,7 @@ namespace Lab3_problem_007
                     return 1000;
                 default:
                     return 0;
-            }
+            }*/
         }
 
         static int CalcSum(int[] currentNumber)
@@ -102,7 +116,7 @@ namespace Lab3_problem_007
             if (!(sumResult <= 4000))
             {
                 return null;
-            }          
+            }
 
             int arabResult = sumResult;
             int number = arabResult;
