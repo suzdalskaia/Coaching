@@ -7,8 +7,8 @@ namespace LettersToNumbers
         static void Main()
         {
             Console.WriteLine("Type a message");
-            string input = Console.ReadLine();
-            string output = null;
+            string input = Console.ReadLine()?? String.Empty;
+            string output = String.Empty;
 
             if (input != null)
             {
